@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/datetextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dateValuetextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day:"
+        android:id="@+id/daytextView"
+        android:layout_below="@+id/datetextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dayValueTextView"
+        android:layout_alignTop="@+id/daytextView"
+        android:layout_alignStart="@+id/dateValuetextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name:"
+        android:id="@+id/eventNametextView"
+        android:layout_below="@+id/daytextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/eventNameValuetextView"
+        android:layout_below="@+id/dayValueTextView"
+        android:layout_alignStart="@+id/dayValueTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Type"
+        android:id="@+id/eventTypetextView"
+        android:layout_below="@+id/eventNametextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/eventTypeValuetextView"
+        android:layout_alignTop="@+id/eventTypetextView"
+        android:layout_alignStart="@+id/eventNameValuetextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue"
+        android:id="@+id/venuetextView"
+        android:layout_below="@+id/eventTypetextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/venueValuetextView"
+        android:layout_below="@+id/eventTypeValuetextView"
+        android:layout_alignStart="@+id/eventTypeValuetextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parents Allowed"
+        android:id="@+id/parentstextView"
+        android:layout_below="@+id/venuetextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/parentsAllowedtextView"
+        android:layout_alignTop="@+id/parentstextView"
+        android:layout_below="@+id/venueValuetextView"
+        android:layout_toRightOf="@+id/parentstextView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve"
+        android:id="@+id/approvebutton"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/descValuetextView"
+        android:layout_alignEnd="@+id/desctextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        android:id="@+id/rejectbutton"
+        android:layout_alignTop="@+id/approvebutton"
+        android:layout_toEndOf="@+id/descValuetextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/desctextView"
+        android:layout_below="@+id/parentstextView"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/descValuetextView"
+        android:layout_below="@+id/desctextView"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:maxLines="3" />
+</RelativeLayout>
